@@ -64,79 +64,54 @@ export default function Tips(){
 
     return(
 
-        <section className="bg-[#DEE8FE] min-h-[80vh] flex flex-col
-         justify-start items-start lg:pt-20 p-6">
+        <section className="bg-quinta min-h-[70vh] flex flex-col
+         justify-start items-start p-6">
             <div>
-                <h1 className="text-5xl font-bold mb-10 text-start pt-20 text-gray-700">Dicas úteis para você</h1>
+                <h1 className="text-5xl font-bold mb-10 text-start pt-10 md:pt-24  text-gray-50">Useful tips for you</h1>
             </div>
 
             <div className="space-y-4">
                 <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                         <AddHomeIcon className='mr-3'/>
-                        <Typography className='font-bold text-md sm:text-xl text-gray-700'>Como preparar sua casa para um serviço de limpeza profissional Cleaning?</Typography>
+                        <Typography className='font-bold text-md sm:text-xl text-gray-700'>How to Prepare Your Home for a Professional Cleaning Service?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
-                        Contratar um serviço de limpeza profissional é uma excelente maneira de garantir que sua casa permaneça impecável, mesmo nas semanas mais corridas. No entanto, há alguns passos que você pode seguir antes da chegada da equipe de limpeza para maximizar a eficiência e garantir que você aproveite ao máximo a visita. Aqui está um guia sobre como preparar sua casa para um serviço de limpeza profissional.
+                        Hiring a professional cleaning service is an excellent way to ensure your home remains spotless, even during the busiest weeks. However, there are a few steps you can take before the cleaning team arrives to maximize efficiency and make the most of their visit. Here is a guide on how to prepare your home for a professional cleaning service.
                         
-                        <span className='font-bold'>1. Desapegue das áreas comuns</span>
-                        A limpeza ao redor da bagunça pode atrasar o processo de limpeza. Reserve alguns minutos para guardar itens como brinquedos, roupas, louças e outros pertences pessoais das bancadas, pisos e mesas. Isso permite que a equipe de limpeza se concentre na limpeza profunda em vez de arrumar a bagunça.
+                        <span className='font-bold'>1. Declutter Common Areas</span>
+                        Cleaning around clutter can slow down the cleaning process. Take a few minutes to put away items like toys, clothes, dishes, and other personal belongings from countertops, floors, and tables. This allows the cleaning team to focus on deep cleaning rather than tidying up the clutter.
 
-                        <span className='font-bold'>2. Guarde itens valiosos e pessoais</span>
-                        Embora os serviços de limpeza profissional sejam confiáveis, é uma boa prática guardar itens valiosos ou sensíveis, como jóias, dinheiro, documentos importantes ou pequenos eletrônicos. Isso lhe dá tranquilidade e garante que nada seja acidentalmente deslocado durante a limpeza.
+                        <span className='font-bold'>2. Store Valuable and Personal Items</span>
+                        Although professional cleaning services are trustworthy, it is a good practice to store valuable or sensitive items such as jewelry, money, important documents, or small electronics. This gives you peace of mind and ensures that nothing is accidentally misplaced during the cleaning.
                         
-                        <span className='font-bold'>3. Comunique instruções especiais </span>
-                        Cada casa é diferente, então, se houver áreas específicas que você deseja que a equipe de limpeza foque ou evite, informe-os com antecedência. Seja um item frágil que requer manuseio cuidadoso ou um cômodo específico que precisa de atenção extra, a comunicação clara garante que suas necessidades sejam atendidas.
+                        <span className='font-bold'>3. Communicate Special Instructions</span>
+                        Every home is different, so if there are specific areas you want the cleaning team to focus on or avoid, inform them in advance. Whether it's a fragile item that requires careful handling or a particular room that needs extra attention, clear communication ensures your needs are met.
 
-                        <span className='font-bold'>4. Forneça acesso a produtos e equipamentos de limpeza</span>
-                        A maioria dos serviços de limpeza profissional traz seus próprios suprimentos, mas se você tiver produtos específicos que prefere que eles usem, certifique-se de que estejam facilmente acessíveis. Além disso, verifique se todas as áreas necessárias da sua casa, como armários de utilidades ou porões, estão destrancadas e acessíveis.
+                        <span className='font-bold'>4. Provide Access to Cleaning Supplies and Equipment</span>
+                        Most professional cleaning services bring their own supplies, but if you have specific products you prefer they use, make sure they are easily accessible. Additionally, ensure that all necessary areas of your home, such as utility closets or basements, are unlocked and accessible.
 
-                        <span className='font-bold'>5. Coloque os animais de estimação em um espaço seguro</span>
-                        Animais de estimação podem ficar curiosos e ansiosos com pessoas novas,
-                        especialmente quando há equipamentos de limpeza envolvidos. Para garantir
-                        que seus animais de estimação estejam confortáveis e que a equipe de
-                        limpeza possa trabalhar sem distrações, coloque-os em um espaço seguro e
-                        protegido, como um cômodo separado ou suas gaiolas, durante a limpeza.
+                        <span className='font-bold'>5. Secure Pets in a Safe Space</span>
+                        Pets can become curious and anxious around new people, especially when cleaning equipment is involved. To ensure your pets are comfortable and the cleaning team can work without distractions, place them in a safe and secure space, such as a separate room or their crates, during the cleaning.
 
-                        <span className='font-bold'>6. Anote áreas problemáticas</span>
-                        Se houver manchas, derramamentos ou áreas específicas que precisam de
-                        atenção extra, faça uma lista ou aponte-as para a equipe de limpeza quando
-                        eles chegarem. Isso ajuda a equipe a abordar suas principais preocupações e
-                        garante que você fique satisfeito com os resultados.
+                        <span className='font-bold'>6. Note Problem Areas</span>
+                        If there are stains, spills, or specific areas that need extra attention, make a list or point them out to the cleaning team when they arrive. This helps the team address your main concerns and ensures you are satisfied with the results.
 
-                        <span className='font-bold'>7.  Prepare sua casa para o serviço</span>
-                        Para certos tipos de limpeza, como limpeza de carpetes ou limpeza profunda
-                        da cozinha, pode haver etapas adicionais que você precisa seguir, como
-                        mover móveis ou esvaziar armários. Verifique com seu serviço de limpeza
-                        com antecedência para ver se há preparações especiais necessárias.
+                        <span className='font-bold'>7.  Prepare Your Home for the Service</span>
+                        For certain types of cleaning, such as carpet cleaning or deep kitchen cleaning, there may be additional steps you need to take, like moving furniture or emptying cabinets. Check with your cleaning service in advance to see if any special preparations are needed.
 
-                        <span className='font-bold'>8. Garanta fácil acesso à sua casa</span>
-                        Se você não estiver em casa durante a limpeza, faça arranjos para que a
-                        equipe de limpeza possa entrar. Você pode deixar uma chave em um local
-                        seguro, fornecer um código de porta ou pedir a um vizinho para deixá-los
-                        entrar. Instruções claras garantem que a equipe possa começar no horário
-                        sem atrasos.
+                        <span className='font-bold'>8. Ensure Easy Access to Your Home</span>
+                        If you won't be home during the cleaning, make arrangements for the cleaning team to enter. You can leave a key in a secure location, provide a door code, or ask a neighbor to let them in. Clear instructions ensure the team can start on time without delays.
 
-                        <span className='font-bold'>9. Discuta suas preferências</span>
-                        Se você tiver preferências sobre como as camas são feitas, produtos
-                        específicos que deseja que sejam usados ou certas técnicas de limpeza,
-                        discuta essas preferências com seu serviço de limpeza com antecedência
-                        para garantir que sua casa seja limpa exatamente como você gosta.
+                        <span className='font-bold'>9. Discuss Your Preferences</span>
+                        If you have preferences about how beds are made, specific products you want used, or certain cleaning techniques, discuss these preferences with your cleaning service in advance to ensure your home is cleaned exactly how you like it.
 
-                        <span className='font-bold'>10. Revise o plano de serviço</span>
-                        Antes do dia da limpeza, revise o plano de serviço ou a lista de verificação
-                        fornecida pela empresa de limpeza. Isso lhe dará uma ideia clara das tarefas
-                        que serão realizadas e do que você pode precisar preparar. Se tiver dúvidas
-                        ou pedidos adicionais, não hesite em perguntar.
+                        <span className='font-bold'>10. Review the Service Plan</span>
+                        Before the cleaning day, review the service plan or checklist provided by the cleaning company. This will give you a clear idea of the tasks to be completed and ensure all your expectations are met.
 
-                        <span className='font-bold'>Benefícios</span>
-                        Preparar sua casa para um serviço de limpeza profissional não precisa ser uma
-                        tarefa assustadora. Seguindo esses passos simples, você pode ajudar a equipe de
-                        limpeza a trabalhar de forma mais eficiente, garantindo que sua casa seja limpa de
-                        acordo com suas expectativas. Na Splendid Cleaning, nos esforçamos para tornar o
-                        processo o mais tranquilo possível. Entre em contato conosco hoje para agendar
-                        sua próxima limpeza e experimente os benefícios de uma casa bem preparada!
+                        <span className='font-bold'>Benefits</span>
+                        Preparing your home for a professional cleaning service doesn’t have to be a daunting task. By following these simple steps, you can help the cleaning team work more efficiently, ensuring your home is cleaned to your expectations. At Alves Cleaning, we strive to make the process as smooth as possible. Contact us today to schedule your next cleaning and experience the benefits of a well-prepared home!
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -144,97 +119,43 @@ export default function Tips(){
                 <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                     <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                         <CleanHandsIcon className='mr-3'/>
-                        <Typography className='font-bold text-md sm:text-xl text-gray-700'>Como manter um escritório em casa limpo e organizado em Seattle e
-                        Região?</Typography>
+                        <Typography className='font-bold text-md sm:text-xl text-gray-700'>How to Keep a Home Office Clean and Organized in Seattle and Surrounding Areas?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
-                        Com o aumento do trabalho remoto, mais residentes de Seattle estão montando
-                        escritórios em casa para se manterem produtivos e focados. No entanto, trabalhar
-                        de casa traz seus próprios desafios, especialmente quando se trata de manter seu
-                        espaço de trabalho limpo e organizado. Um escritório em casa arrumado não só
-                        aumenta a produtividade, mas também cria um ambiente de trabalho mais
-                        agradável. Aqui estão algumas dicas para ajudar você a manter um escritório em
-                        casa limpo e organizado em Seattle.
+                        With the rise of remote work, more Seattle residents are setting up home offices to stay productive and focused. However, working from home brings its own challenges, especially when it comes to keeping your workspace clean and organized. A tidy home office not only boosts productivity but also creates a more pleasant working environment. Here are some tips to help you keep a home office clean and organized in Seattle.
                         
-                        <span className='font-bold'>1. Desapegue regularmente</span>
-                        A bagunça pode se acumular rapidamente em um escritório em casa,
-                        especialmente se você estiver lidando com várias tarefas. Reserve alguns
-                        minutos no final de cada dia para arrumar sua mesa, guardar papéis e
-                        remover quaisquer itens que não pertençam ao local. Desapegar
-                        regularmente ajuda a manter um espaço de trabalho claro e reduz as
-                        distrações.
+                        <span className='font-bold'>1. Declutter Regularly</span>
+                        Clutter can quickly accumulate in a home office, especially if you’re juggling multiple tasks. Take a few minutes at the end of each day to tidy up your desk, put away papers, and remove any items that don’t belong. Regular decluttering helps maintain a clear workspace and reduces distractions.
 
-                        <span className='font-bold'>2. Estabeleça um sistema de arquivamento</span>
-                        Papéis e documentos podem se acumular facilmente se não forem
-                        gerenciados adequadamente. Crie um sistema de arquivamento para
-                        documentos importantes, faturas e anotações. Use pastas rotuladas ou
-                        arquivos para manter tudo organizado e fácil de encontrar. Para arquivos
-                        digitais, considere usar armazenamento em nuvem e organizá-los em pastas
-                        para acesso rápido.
+                        <span className='font-bold'>2. Establish a Filing System</span>
+                        Papers and documents can easily pile up if not managed properly. Create a filing system for important documents, invoices, and notes. Use labeled folders or files to keep everything organized and easy to find. For digital files, consider using cloud storage and organizing them into folders for quick access.
                         
-                        <span className='font-bold'>3. Mantenha sua mesa limpa</span>
-                        Uma mesa livre de bagunça é essencial para um dia de trabalho produtivo.
-                        Limite os itens em sua mesa ao essencial: seu computador, um caderno e
-                        alguns suprimentos usados com frequência. Use organizadores de gaveta ou
-                        bandejas de mesa para guardar canetas, clipes de papel e outros pequenos
-                        itens fora da vista.
+                        <span className='font-bold'>3. Keep Your Desk Clean</span>
+                        A clutter-free desk is essential for a productive workday. Limit the items on your desk to the essentials: your computer, a notebook, and a few frequently used supplies. Use drawer organizers or desk trays to store pens, paper clips, and other small items out of sight.
 
-                        <span className='font-bold'>4. Limpe seus eletrônicos</span>
-                        Seu computador, teclado e mouse são alguns dos itens mais usados em seu
-                        escritório em casa e podem acumular poeira e germes ao longo do tempo.
-                        Limpe seus eletrônicos regularmente com um pano de microfibra e use ar
-                        comprimido para limpar seu teclado. Isso mantém seu equipamento limpo e
-                        prolonga sua vida útil.
+                        <span className='font-bold'>4.Clean Your Electronics</span>
+                        Your computer, keyboard, and mouse are some of the most frequently used items in your home office and can accumulate dust and germs over time. Clean your electronics regularly with a microfiber cloth and use compressed air to clean your keyboard. This keeps your equipment clean and prolongs its lifespan.
 
-                        <span className='font-bold'>5. Crie uma rotina de limpeza</span>
-                        Incorpore a limpeza do escritório em sua rotina de limpeza regular. Reserve
-                        um tempo a cada semana para tirar o pó das superfícies, aspirar o chão e
-                        limpar sua mesa. Isso evita o acúmulo de sujeira e poeira e garante que seu
-                        espaço de trabalho permaneça fresco e convidativo.
+                        <span className='font-bold'>5. Create a Cleaning Routine</span>
+                        Incorporate office cleaning into your regular cleaning routine. Set aside time each week to dust surfaces, vacuum the floor, and clean your desk. This prevents the buildup of dirt and dust and ensures your workspace remains fresh and inviting.
 
-                        <span className='font-bold'>6. Gerencie cabos e fios</span>
-                        Cabos e fios podem se emaranhar e ficar bagunçados rapidamente, fazendo
-                        seu escritório parecer desorganizado. Use ferramentas de gerenciamento de
-                        cabos, como clipes, laços ou capas, para manter os cabos organizados e fora
-                        da vista. Rotular seus cabos também pode facilitar a identificação e
-                        desconexão de dispositivos quando necessário.
+                        <span className='font-bold'>6. Manage Cables and Wires</span>
+                        Cables and wires can quickly become tangled and messy, making your office look disorganized. Use cable management tools like clips, ties, or covers to keep cables organized and out of sight. Labeling your cables can also make it easier to identify and disconnect devices when necessary.
 
-                        <span className='font-bold'>7. Otimize seu armazenamento</span>
-                        Um armazenamento eficiente é fundamental para um escritório em casa
-                        organizado. Use prateleiras, armários e caixas de armazenamento para
-                        manter suprimentos e documentos bem guardados. Considere soluções de
-                        armazenamento vertical para maximizar o espaço, especialmente em
-                        escritórios menores. Um sistema de armazenamento bem organizado reduz a
-                        bagunça e facilita encontrar o que você precisa.
+                        <span className='font-bold'>7.Optimize Your Storage</span>
+                        Efficient storage is key to an organized home office. Use shelves, cabinets, and storage boxes to keep supplies and documents well-organized. Consider vertical storage solutions to maximize space, especially in smaller offices. A well-organized storage system reduces clutter and makes it easier to find what you need.
 
-                        <span className='font-bold'>8. Incorpore plantas</span>
-                        Adicionar plantas ao seu escritório em casa não só melhora a estética, mas
-                        também ajuda a purificar o ar. Escolha plantas de baixa manutenção, como
-                        suculentas, plantas-snake ou pothos, que prosperam em ambientes internos.
-                        As plantas também podem melhorar seu humor e criatividade, tornando seu
-                        espaço de trabalho mais agradável.
+                        <span className='font-bold'>8. Include plants</span>
+                        Adding plants to your home office not only enhances aesthetics but also helps purify the air. Choose low-maintenance plants such as succulents, snake plants, or pothos, which thrive indoors. Plants can also improve your mood and creativity, making your workspace more enjoyable.
 
-                        <span className='font-bold'>9. Personalize seu espaço</span>
-                        Embora manter a limpeza seja importante, não se esqueça de personalizar
-                        seu espaço de trabalho. Adicione alguns toques pessoais, como fotos, obras
-                        de arte ou uma caneca favorita, para tornar seu escritório mais convidativo.
-                        Apenas tome cuidado para não sobrecarregar sua mesa com muitos itens.
+                        <span className='font-bold'>9. Personalize your space</span>
+                        While keeping things tidy is important, don't forget to personalize your workspace. Add personal touches like photos, artwork, or a favorite mug to make your office more inviting. Just be careful not to clutter your desk with too many items.
 
-                        <span className='font-bold'>10. Fazer pausas regulares</span>
-                        Ao longo do dia de trabalho não é apenas bom para sua produtividade, mas
-                        também é uma oportunidade para arrumar seu espaço de trabalho. Use essas
-                        pausas para se alongar, limpar qualquer bagunça e organizar seu espaço.
-                        Esse hábito mantém seu escritório organizado e ajuda você a se concentrar
-                        quando voltar ao trabalho.
-
-                        <span className='font-bold'>Resumo</span>
-                        Manter um escritório em casa limpo e organizado é crucial para a produtividade,
-                        especialmente à medida que o trabalho remoto se torna mais comum em Seattle.
-                        Seguindo essas dicas, você pode criar um espaço de trabalho funcional e inspirador.
-                        Se você precisar de uma ajudinha extra para manter sua casa ou escritório limpos, a
-                        Splendid Cleaning está aqui para ajudar. Entre em contato conosco hoje para
-                        agendar um serviço de limpeza profissional adaptado às suas necessidades!
+                        <span className='font-bold'>10. Take regular breaks</span>
+                        Taking breaks throughout the workday is not only beneficial for your productivity, but also offers a chance to tidy up your workspace. Use these breaks to stretch, clear any clutter, and organize your space. This habit keeps your office tidy and helps you focus when you return to work.
+                        <span className='font-bold'>Summary</span>
+                        Keeping a clean and organized home office is crucial for productivity, especially as remote work becomes more common in Seattle. By following these tips, you can create a functional and inspiring workspace. If you need a little extra help maintaining your home or office cleanliness, Alves Cleaning is here to assist you. Contact us today to schedule a professional cleaning service tailored to your needs!
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -242,91 +163,47 @@ export default function Tips(){
                 <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                     <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                         <LibraryAddIcon className='mr-3'/>
-                        <Typography className='font-bold text-md sm:text-xl text-gray-700'>10 Dicas de limpeza para moradores de Seattle e Região</Typography>
+                        <Typography className='font-bold text-md sm:text-xl text-gray-700'>10 Cleaning Tips for Residents of Seattle and Surrounding Areas</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
 
-                        <span className='font-bold'>Mantenha seu espaço brilhando o ano TODO</span>
+                        <span className='font-bold'>Keep your space shining all year round</span>
 
-                        Viver em Seattle traz um conjunto único de desafios, especialmente quando se trata
-                        de manter sua casa limpa. O clima chuvoso da cidade pode fazer com que manter
-                        um espaço arrumado pareça uma tarefa difícil. No entanto, com algumas dicas e
-                        truques estratégicos, você pode manter sua casa brilhando o ano todo, faça chuva
-                        ou faça sol. Aqui estão nossas 10 principais dicas de limpeza:
+                        Living in Seattle presents a unique set of challenges, especially when it comes to keeping your home clean. The city's rainy climate can make maintaining a tidy space seem like a daunting task. However, with some strategic tips and tricks, you can keep your home shining all year round, rain or shine. Here are our top 10 cleaning tips:
                         
-                        <span className='font-bold'>1. Invista em capachos de qualidade</span>
-                        A temporada de chuvas em Seattle pode resultar em pegadas enlameadas e
-                        manchas de água. Coloque capachos de alta qualidade tanto do lado de fora
-                        quanto do lado de dentro de cada entrada para capturar a sujeira e a umidade
-                        antes que se espalhem pela casa. Lembre-se de limpar os capachos
-                        regularmente para garantir que permaneçam eficazes.
+                        <span className='font-bold'>1. Invest in Quality Doormats</span>
+                        Seattle's rainy season can lead to muddy footprints and water stains. Place high-quality doormats both outside and inside each entrance to capture dirt and moisture before they spread throughout the house. Remember to clean the mats regularly to ensure they remain effective.
 
-                        <span className='font-bold'>2. Mantenha a casa livre de sapatos</span>
-                        Incentive uma política de não usar sapatos dentro de casa. Esta regra simples
-                        ajuda a reduzir a quantidade de sujeira, água da chuva e detritos que entram.
-                        Considere fornecer chinelos ou meias confortáveis para os convidados como
-                        um toque adicional de hospitalidade.
-                        
-                        <span className='font-bold'>3. Combata a umidade com desumidificadores</span>
-                        O clima úmido de Seattle pode levar ao excesso de umidade em sua casa,
-                        causando mofo e bolor. Combata isso usando desumidificadores,
-                        especialmente em porões, banheiros e closets. Verifique e limpe seus
-                        desumidificadores regularmente para mantê-los funcionando de maneira
-                        eficiente.
+                        <span className='font-bold'>2. Keep Shoes Out of the House</span>
+                        Encourage a no-shoe policy indoors. This simple rule helps reduce the amount of dirt, rainwater, and debris that enters. Consider providing slippers or comfortable socks for guests as an extra touch of hospitality.
 
-                        <span className='font-bold'>4. Crie um cronograma de limpeza semanal</span>
-                        A consistência é fundamental para manter uma casa limpa. Desenvolva uma
-                        rotina de limpeza semanal que cubra todas as áreas essenciais, incluindo tirar
-                        o pó, aspirar e passar pano. Dividir as tarefas ao longo da semana torna a
-                        limpeza mais gerenciável e garante que nada seja esquecido.
+                        <span className='font-bold'>3. Combat Humidity with Dehumidifiers</span>
+                        Seattle's humid weather can lead to excess moisture in your home, causing mold and mildew. Combat this by using dehumidifiers, especially in basements, bathrooms, and closets. Check and clean your dehumidifiers regularly to keep them operating efficiently.
 
-                        <span className='font-bold'>5. Usar panos de microfibra</span>
-                        São uma revolução quando se trata de limpeza. Eles são altamente eficazes
-                        para capturar poeira, sujeira e até bactérias sem a necessidade de produtos
-                        químicos agressivos. Tenha alguns à mão para diferentes superfícies, como
-                        bancadas, janelas e eletrônicos.
+                        <span className='font-bold'>4. Create a Weekly Cleaning Schedule</span>
+                        Consistency is key to maintaining a clean home. Develop a weekly cleaning routine that covers all essential areas, including dusting, vacuuming, and mopping. Spreading tasks throughout the week makes cleaning more manageable and ensures nothing gets overlooked.
 
-                        <span className='font-bold'>6. Mantenha as janelas cristalinas</span>
-                        O clima nublado de Seattle pode fazer sua casa parecer escura, então janelas
-                        limpas são essenciais. Use uma solução de vinagre e água para limpar suas
-                        janelas regularmente, permitindo a entrada de mais luz natural. Não se
-                        esqueça de limpar os peitoris e trilhos das janelas, que podem acumular
-                        sujeira ao longo do tempo.
+                        <span className='font-bold'>5. Use Microfiber Cloths</span>
+                        Microfiber cloths are a game changer when it comes to cleaning. They are highly effective at capturing dust, dirt, and even bacteria without the need for harsh chemicals. Keep some handy for different surfaces, such as countertops, windows, and electronics.
 
-                        <span className='font-bold'>7. Gerencie os pelos de animais de estimação</span>
-                        Se você tem animais de estimação, saiba como os pelos podem se espalhar
-                        rapidamente pela casa. Escove seus animais regularmente para minimizar a
-                        queda de pelos e aspire os pisos, móveis e estofados pelo menos duas vezes
-                        por semana. Considere investir em um aspirador específico para animais de
-                        estimação para obter os melhores resultados.
+                        <span className='font-bold'>6. Keep Windows Crystal Clear</span>
+                        Seattle's cloudy weather can make your home feel dark, so clean windows are essential. Use a vinegar and water solution to clean your windows regularly, allowing more natural light in. Don't forget to clean the sills and tracks, which can accumulate dirt over time.
 
-                        <span className='font-bold'>8. Limpe e gire os tapetes</span>
-                        Tapetes podem capturar sujeira e umidade, especialmente em áreas de alto
-                        tráfego. Aspire os tapetes regularmente e considere girá-los a cada poucos
-                        meses para equilibrar o desgaste. Se possível, leve-os para fora para sacudir
-                        a sujeira solta ou mande-os limpar profissionalmente.
+                        <span className='font-bold'>7. Manage Pet Hair</span>
+                        If you have pets, you know how quickly hair can spread throughout the house. Brush your pets regularly to minimize shedding and vacuum floors, furniture, and upholstery at least twice a week. Consider investing in a vacuum specifically designed for pet hair for the best results.
 
-                        <span className='font-bold'>9. Mantenha a lavanderia em dia</span>
-                        Dias chuvosos muitas vezes significam roupas e lençóis úmidos. Não deixe a
-                        lavanderia acumular—faça disso um hábito lavar e secar roupas
-                        regularmente. Use folhas de secador para reduzir a eletricidade estática e
-                        considere secar certos itens, como toalhas, em um varal para evitar mofo.
+                        <span className='font-bold'>8. Clean and Rotate Rugs</span>
+                        Rugs can trap dirt and moisture, especially in high-traffic areas. Vacuum rugs regularly and consider rotating them every few months to balance wear. If possible, take them outside to shake out loose dirt or have them professionally cleaned.
 
-                        <span className='font-bold'>10. Faça limpezas profundas regularmente</span>
-                        Além da sua rotina de limpeza semanal, agende sessões regulares de limpeza
-profunda. Concentre-se em áreas frequentemente negligenciadas, como atrás
-de eletrodomésticos, dentro de armários e embaixo dos móveis. Isso evitará o
-acúmulo de sujeira e manterá sua casa sempre fresca e limpa.
+                        <span className='font-bold'>9. Keep Up with Laundry</span>
+                        Rainy days often mean wet clothes and linens. Don’t let laundry pile up—make it a habit to wash and dry clothes regularly. Use dryer sheets to reduce static electricity and consider air-drying certain items, like towels, to prevent mold.
 
-                        <span className='font-bold'>Resumo</span>
-                        O clima de Seattle pode ser imprevisível, mas sua rotina de limpeza não precisa ser.
-                        Incorporando essas dicas na manutenção regular da sua casa, você pode desfrutar
-                        de um espaço limpo e convidativo, independentemente da previsão do tempo. Para
-                        aqueles momentos em que a vida fica muito corrida, lembre-se de que a Splendid
-                        Cleaning está aqui para ajudar a manter sua casa em Seattle em excelente estado o
-                        ano todo. Entre em contato conosco hoje para serviços de limpeza profissional
-                        adaptados às suas necessidades!
+                        <span className='font-bold'>10. Schedule Regular Deep Cleanings</span>
+                        In addition to your weekly cleaning routine, schedule regular deep cleaning sessions. Focus on often-neglected areas, such as behind appliances, inside cabinets, and under furniture. This will prevent dirt buildup and keep your home fresh and clean.
+
+                        <span className='font-bold'>Summary</span>
+                        Seattle's weather may be unpredictable, but your cleaning routine doesn’t have to be. By incorporating these tips into your regular home maintenance, you can enjoy a clean and inviting space regardless of the weather forecast. For those times when life gets too busy, remember that Alves Cleaning is here to help keep your Seattle home in excellent condition year-round. Contact us today for professional cleaning services tailored to your needs!"
                         </Typography>
                     </AccordionDetails>
                 </Accordion>

@@ -34,16 +34,17 @@ export default function Testimonials() {
     );
 
     const placeholders = [
-        {_id: 'placeholder-1', nome: 'Cliente 1', mensagem: 'Excelente serviço! A casa sempre fica impecável e o profissional é muito confiável.', nota: 5, mostrar_tela: '1'},
-        {_id: 'placeholder-2', nome: 'Cliente 2', mensagem: 'Serviço pontual e muito bem feito. A equipe é sempre atenciosa e detalhista.', nota: 5, mostrar_tela: '2'},
-        {_id: 'placeholder-3', nome: 'Cliente 3', mensagem: 'Uso o serviço há muitos anos e nunca tive problemas. Recomendo para todos!', nota: 4, mostrar_tela: '3'},
-        {_id: 'placeholder-4', nome: 'Cliente 4', mensagem: 'Profissionais dedicados e cuidadosos. O atendimento é excelente, vale muito a pena.', nota: 5, mostrar_tela: '4'},
-        {_id: 'placeholder-5', nome: 'Cliente 5', mensagem: 'O serviço é incrível, a casa fica perfeita sempre! Não troco por nada.', nota: 5, mostrar_tela: '5'},
-        {_id: 'placeholder-6', nome: 'Cliente 6', mensagem: 'Recomendo demais! Profissionalismo e qualidade no serviço prestado.', nota: 5, mostrar_tela: '6'}
+        {_id: 'placeholder-1', nome: 'John Doe', mensagem: 'Excellent service! The house always looks spotless, and the professional is very reliable.', nota: 5, mostrar_tela: '1'},
+        {_id: 'placeholder-2', nome: 'Emily Smith', mensagem: 'Timely and very well done service. The team is always attentive and detail-oriented.', nota: 5, mostrar_tela: '2'},
+        {_id: 'placeholder-3', nome: 'Michael Johnson', mensagem: 'I have used the service for many years and have never had any problems. I recommend it to everyone!', nota: 4, mostrar_tela: '3'},
+        {_id: 'placeholder-4', nome: 'Sarah Brown', mensagem: 'edicated and careful professionals. The service is excellent, definitely worth it.', nota: 5, mostrar_tela: '4'},
+        {_id: 'placeholder-5', nome: 'David Wilson', mensagem: 'The service is amazing; the house always looks perfect! I wouldn’t trade it for anything.', nota: 5, mostrar_tela: '5'},
+        {_id: 'placeholder-6', nome: 'Laura Garcia', mensagem: 'Highly recommend! Professionalism and quality in the service provided.', nota: 5, mostrar_tela: '6'}
     ];
+    
 
     return (
-        <section className="bg-[#DEE8FE] flex flex-col justify-center min-h-screen" id="Testimonials">
+        <section className="bg-segunda flex flex-col justify-center min-h-screen" id="Testimonials">
             <div className="container flex flex-col justify-start md:justify-center mx-auto pt-16">
                 <h1 className="text-5xl font-semibold leading-none text-start text-gray-700 p-6 sm:p-16">Avaliações recebidas</h1>
             </div>

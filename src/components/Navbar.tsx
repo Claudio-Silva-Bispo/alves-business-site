@@ -18,33 +18,33 @@ export default function Navbar() {
 
   const menuItems = [
     { item: 'Home', path: '/', icon: faHome },
-    { item: 'Sobre nós', path: '/AboutCompany', icon: faBuilding },
-    { item: 'Contatos', path: '/ContactSection', icon: faPhone },
-    { item: 'Orçamento', path: '#quote', icon: faCalendarAlt },
-    { item: 'Serviços', path: '/Services', icon: faCalendarTimes },
+    { item: 'About Us', path: '/AboutCompany', icon: faBuilding },
+    { item: 'Contact', path: '/ContactSection', icon: faPhone },
+    { item: 'Quote', path: '#quote', icon: faCalendarAlt },
+    { item: 'Services', path: '/Services', icon: faCalendarTimes },
     { item: 'Feedback', path: '/Feedback', icon: faComments },
     { item: 'Testimonials', path: '/Testimonials', icon: faThumbsUp },
-    { item: 'Dicas', path: '/Tips', icon: faShareAlt },
-    { item: 'Time', path: '/Team', icon: faUsers },
-    { item: 'Galeria', path: '/Gallery', icon: faGlobe },
+    { item: 'Tips', path: '/Tips', icon: faShareAlt },
+    { item: 'Team', path: '/Team', icon: faUsers },
+    { item: 'Gallery', path: '/Gallery', icon: faGlobe },
   ];
 
   const sections = [
 
     {
-      title: 'Sobre nós',
+      title: 'About Us',
       icon: faBuilding,
-      description: 'Aprenda mais sobre nós',
+      description: 'Learn more about us.',
       path: '/AboutCompany',
     },
     {
-      title: 'Serviços',
+      title: 'Services',
       icon: faCalendarTimes,
-      description: 'Lista de serviços',
+      description: 'Service List',
       path: '/Services',
     },
     {
-      title: 'Contato',
+      title: 'Contact',
       icon: faPhone,
       description: 'Get in touch with us',
       path: '/ContactSection',
@@ -52,38 +52,38 @@ export default function Navbar() {
     {
       title: 'Feedback',
       icon: faComments,
-      description: 'Deixe seu feedback',
+      description: 'Leave your feedback',
       path: '/Feedback',
     },
     {
       title: 'Testimonials',
       icon: faThumbsUp,
-      description: 'O que nossos clientes andam falando',
+      description: 'What our customers are saying',
       path: '/Testimonials',
     },
     {
-      title: 'Dicas',
+      title: 'Tips',
       icon: faShareAlt,
-      description: 'Fique ligado nas melhores dicas.',
+      description: 'Stay tuned for the best tips.',
       path: '/Tips',
     },
     {
-      title: 'Time',
+      title: 'Team',
       icon: faUsers,
-      description: 'Conheça nosso time',
+      description: 'Meet our team.',
       path: '/Team',
     },
     
     {
-      title: 'Novidades',
+      title: 'News',
       icon: faEnvelope,
-      description: 'Fique por dentro das novidades',
+      description: 'Stay updated on the news.',
       path: '/NewsLetter',
     },
     {
-      title: 'Galeria',
+      title: 'Gallery',
       icon: faGlobe,
-      description: 'Fotos dos principais serviços',
+      description: 'Photos of the main services.',
       path: '/Gallery',
     },
   ];
@@ -160,20 +160,20 @@ export default function Navbar() {
     <header className={`p-4 fixed top-0 w-full z-50 ${isHeroVisible ? 'bg-transparent text-white hover:text-gray-700' : 'bg-white'}`} >
       <div className="container flex justify-between h-10 mx-auto w-full">
         <div className="hidden md:flex md:h-10 md:w-40  ">
-          <a href="/"><Image width={100} height={100} src={""} alt="Logo da empresa" /></a>
-        </div>
+          {/*<a href="/"><Image width={100} height={100} src={"/assets/Navbar/logo-alves-cleaning.png"} alt="Logo da empresa" /></a>*/}
+      </div>
         <div className="hidden lg:flex items-center space-x-3 text-lg">
           <Link href="/" className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2">
             <FontAwesomeIcon icon={faHome} />
             <span>Home</span>
           </Link>
-          <Link href="#quote" className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2" onClick={() => handleHashLinkClick('#FormQuote')}>
+          <Link href="/QuoteSection" className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2" onClick={() => handleHashLinkClick('#FormQuote')}>
             <FontAwesomeIcon icon={faCalendarAlt} />
-            <span>Orçamento</span>
+            <span>Quote</span>
           </Link>
           <div className="relative" ref={dropdownRef}>
             <button onClick={handleDropdownToggle} className="px-4 py-2 hover:bg-gray-100 rounded-md flex items-center space-x-2">
-              <span>Seções</span>
+              <span>Sections</span>
               <FontAwesomeIcon icon={faChevronDown} />
             </button>
             {isDropdownOpen && (
@@ -197,7 +197,7 @@ export default function Navbar() {
           
         </div>
         <div className="hidden lg:flex items-center">
-          <a href="tel:+5511999999999" className="px-4 py-2 bg-gray-500 text-white rounded-md">Contato +(206) 9999-8888</a>
+          <a href="tel:+5511999999999" className="px-4 py-2 bg-quinta text-white rounded-md">Contato +(980) 273-9078</a>
         </div>
         <button onClick={toggleMobileMenu} className="lg:hidden p-4 text-gray-800">
           <FontAwesomeIcon icon={faBars} size="lg" />
@@ -230,9 +230,9 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="mt-auto p-5 w-full m:flex m:justify-center hidden">
-            <Image width={100} height={100} src={""} alt="Logo da empresa" className="w-44 h-auto hidden" />
-          </div>
+          {/*<div className="mt-auto p-5 w-full md:flex m:justify-center hidden">
+            <Image width={100} height={100} src={"/assets/Navbar/logo-alves-cleaning.png"} alt="Logo da empresa" className="w-44 h-auto hidden md:flex" />
+          </div>*/}
         </div>
       )}
     </header>

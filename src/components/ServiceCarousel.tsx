@@ -3,16 +3,17 @@ import { FaBroom, FaSoap, FaHome, FaBuilding, FaWarehouse, FaTruckMoving, FaDoor
 import Image from 'next/image';
 
 const ServiceCarousel: React.FC = () => {
-  const services = [
-    { title: 'Regular Cleaning', description: 'Standard cleaning services for your home.', icon: FaBroom, details: 'Saiba mais' },
-    { title: 'Deep Cleaning', description: 'Thorough cleaning for every nook and cranny.', icon: FaSoap, details: 'Saiba mais' },
-    { title: 'Move In Cleaning', description: 'Cleaning services for your new home before you move in.', icon: FaHome, details: 'Saiba mais' },
-    { title: 'Move Out Cleaning', description: 'Ensure your old home is spotless before you leave.', icon: FaDoorClosed, details: 'Saiba mais' },
-    { title: 'Commercial Cleaning', description: 'Professional cleaning services for your business.', icon: FaBuilding, details: 'Saiba mais' },
-    { title: 'Warehouse Cleaning', description: 'Specialized cleaning for large warehouse spaces.', icon: FaWarehouse, details: 'Saiba mais' },
-    { title: 'Post-Construction Cleaning', description: 'Cleaning services after construction work.', icon: FaTruckMoving, details: 'Saiba mais' },
-    { title: 'Event Cleaning', description: 'Cleaning services before and after events.', icon: FaDoorOpen, details: 'Saiba mais' },
-  ];
+    const services = [
+        { title: 'Regular Cleaning', description: 'Standard cleaning services for your home, including dusting, vacuuming, and mopping floors.', icon: FaBroom, details: 'Saiba mais' },
+        { title: 'Deep Cleaning', description: 'Thorough cleaning for every nook and cranny, ensuring a spotless and hygienic environment.', icon: FaSoap, details: 'Saiba mais' },
+        { title: 'Move In Cleaning', description: 'Cleaning services for your new home before you move in, making it fresh and ready for you.', icon: FaHome, details: 'Saiba mais' },
+        { title: 'Move Out Cleaning', description: 'Ensure your old home is spotless before you leave, helping you get your deposit back with ease.', icon: FaDoorClosed, details: 'Saiba mais' },  
+        { title: 'Commercial Cleaning', description: 'Professional cleaning services for your business, tailored to meet the specific needs of your workspace.', icon: FaBuilding, details: 'Saiba mais' },
+        { title: 'Warehouse Cleaning', description: 'Specialized cleaning for large warehouse spaces, ensuring a safe and organized environment for operations.', icon: FaWarehouse, details: 'Saiba mais' },
+        { title: 'Post-Construction Cleaning', description: 'Cleaning services after construction work, removing debris and dust to reveal a polished finish.', icon: FaTruckMoving, details: 'Saiba mais' },
+        { title: 'Event Cleaning', description: 'Cleaning services before and after events, ensuring a pristine venue for guests and attendees.', icon: FaDoorOpen, details: 'Saiba mais' },
+    ];
+    
 
   return (
 
@@ -22,23 +23,23 @@ const ServiceCarousel: React.FC = () => {
                     <div className="container grid gap-6 mx-auto lg:grid-cols-2 xl:grid-cols-5">
                         <Image width={800} height={400} src="/assets/Service/imagem4.jpg" alt="Limpeza Profissional" className="object-cover w-full rounded-md xl:col-span-3 bg-primeira" />
                         <div className="w-full px-3 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 bg-white">
-                            <span className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl pt-10 text-gray-700">Serviços</span>
+                            <span className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xltext-gray-700">Services</span>
                             <p className="mt-6 mb-8 text-lg sm:mb-12 xl:max-w-3xl text-gray-600">
-                                Nosso compromisso é proporcionar uma experiência excepcional, cuidando de cada aspecto para que sua casa ou empresa seja mantida com a máxima qualidade e atenção, inclusive em situações especiais como mudanças.
+                            Our commitment is to provide an exceptional experience, taking care of every aspect to ensure that your home or business is maintained with the utmost quality and attention, even in special situations like relocations.
                             </p>
 
                             <div className="flex flex-col s:flex-col sm:flex-row justify-start w-full gap-4">
                                 <button
                                     type="button"
-                                    className="w-full  px-8 py-3 text-lg font-semibold rounded bg-segunda text-gray-600 focus:ring hover:ring focus:ring-opacity-75 focus:ring-quinta hover:ring-quinta"
+                                    className="w-full  px-8 py-3 text-lg font-semibold rounded bg-quinta text-gray-50 focus:ring hover:ring focus:ring-opacity-75 focus:ring-quinta hover:ring-quinta"
                                 >
-                                    <a href="/ContactSection">Contato</a>
+                                    <a href="/ContactSection">Contact</a>
                                 </button>
                                 <button
                                     type="button"
-                                    className="w-full px-8 py-3 text-lg font-semibold rounded bg-quarta text-gray-600 focus:ring hover:ring focus:ring-opacity-75 focus:ring-quinta hover:ring-quinta"
+                                    className="w-full px-8 py-3 text-lg font-semibold rounded bg-quarta text-gray-100 focus:ring hover:ring focus:ring-opacity-75 focus:ring-quinta hover:ring-quinta"
                                 >
-                                    <a href="/QuoteSection">Orçamento</a>
+                                    <a href="/QuoteSection">Quote</a>
                                 </button>
                             </div>
                         </div>
@@ -56,7 +57,7 @@ const ServiceCarousel: React.FC = () => {
             </div>
                 <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-5">{service.description}</p>
-                <a href="/Service" className='text-quinta'>{service.details}</a>
+                <a href="/Services" className='text-quinta'>{service.details}</a>
             </div>
             
         ))}

@@ -15,18 +15,18 @@ export default function CarroselSimple(){
                 }}
                 id="carrosel">
                 <div className="flex flex-col w-full lg:w-1/3 md:p-8 lg:p-12 bg-opacity-80 ">
-                    <h1 className="text-5xl font-bold leading-none mb-6 pt-10">Serviços realizados</h1>
+                    <h1 className="text-5xl font-bold leading-none mb-6 pt-10">Services rendered</h1>
                     <p className="text-lg mb-6">
-                        Descubra a transformação que nossos serviços de limpeza podem proporcionar! Com uma atenção especial aos detalhes, mostramos o impacto positivo que uma limpeza profissional pode ter na sua casa ou empresa. Confira nossos projetos de antes e depois e surpreenda-se com os resultados!
+                    Discover the transformation that our cleaning services can provide! With special attention to detail, we showcase the positive impact that professional cleaning can have on your home or business. Check out our before and after projects and be amazed by the results!
                     </p>
                     <p className="text-lg mb-6">
-                        Logo abaixo, saiba mais sobre os serviços que oferecemos.
+                    Right below, learn more about the services we offer.
                     </p>
                     <button
                             type="button"
                             className="w-full s:w-full sm:w-auto px-8 py-3 text-lg font-semibold rounded bg-gray-100 text-gray-900 focus:ring hover:ring focus:ring-opacity-75 focus:ring-quinta hover:ring-quinta"
                         >
-                            <a href="/Gallery"></a>visite a galeria
+                            <a href="/Gallery"></a>Visit the gallery
                         </button>
                 </div>
             </div>

@@ -2,40 +2,28 @@ import Image from "next/image"
 
 const people = [
     {
-      name: 'pessoa1',
+      name: 'Claudio',
       role: 'Co-Founder / CEO',
       imageUrl:
         '/assets/About/imagem1.jpg',
     },
     {
-        name: 'pessoa2',
+        name: 'Esposa',
         role: 'Co-Founder',
         imageUrl:
           '/assets/About/imagem1.jpg',
-      },
-      {
-        name: 'pessoa3',
-        role: 'Auxiliar',
-        imageUrl:
-          '/assets/About/imagem1.jpg',
-      },
-      {
-        name: 'pessoa4',
-        role: 'Motorista',
-        imageUrl:
-          '/assets/About/imagem1.jpg',
-      },
+      }
 
   ]
   
   export default function Team() {
     return (
-      <section className="bg-[#DEE8FE] py-24 sm:py-32 min-h-[80vh] flex justify-center items-center">
+      <section className="bg-segunda py-24 sm:py-32 min-h-[80vh] flex justify-center items-center">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
-            <h2 className="text-5xl font-bold tracking-tight text-gray-700 sm:text-5xl">Conheça nosso time</h2>
+            <h2 className="text-5xl font-bold tracking-tight text-gray-700 sm:text-5xl">Meet our team</h2>
             <p className="mt-6 text-lg leading-8 text-gray-700">
-              O time pode ser alterado a qualquer momento para realizar o serviço em sua residência.
+            The team can be changed at any time to perform the service in your home.
             </p>
           </div>
           <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">

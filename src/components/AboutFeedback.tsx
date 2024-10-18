@@ -19,11 +19,11 @@ export default function AboutFeedback() {
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mb-10 md:mb-0">
                         
                         <button rel="noopener noreferrer" className="px-8 py-3 text-lg rounded bg-segunda  text-gray-600 font-bold text-center focus:ring hover:ring focus:ring-opacity-75 focus:ring-segunda hover:ring-segunda">
-                        <a href="/Feedback">Preencha agora</a>
+                        <a href="/Feedback">Fill out now</a>
                         </button>
 
                         <button rel="noopener noreferrer" className="px-8 py-3 text-lg rounded bg-white  text-gray-700 font-bold text-center focus:ring hover:ring focus:ring-opacity-75 focus:ring-segunda hover:ring-segunda">
-                        <a href="/Testimonials">Feedback recebidos</a>
+                        <a href="/Testimonials">Received Feedback</a>
                         </button>
                     </div>
                 </div>

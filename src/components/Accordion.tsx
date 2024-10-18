@@ -69,19 +69,18 @@ export default function CustomizedAccordions() {
     <section className='min-h-[60vh] flex flex-col justify-center p-5 m:pt-20'>
       
       <div className="before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:bg-gray-700 pt-20 md:p-0 flex flex-col mb-6">
-        <h2 className="text-5xl text-gray-700 md:mb-0 font-bold">Principais dúvidas</h2>
+        <h2 className="text-5xl text-gray-700 md:mb-0 font-bold">Main Questions</h2>
       </div>
 
       <div className="space-y-4">
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
           <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
             <PublicIcon className='mr-3'/>
-            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Cidades de atendimento</Typography>
+            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Service available in the following cities</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              malesuada lacus ex, sit amet blandit leo lobortis eget.
+              Bellevue, Bothell, Brier, Carnation, Edmonds, Everett, Kenmore, Kirkland, Lynnwood, Mill Creek, Monroe, Mukilteo, Redmond, Shoreline, Snohomish, Woodinville, and more.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -89,22 +88,22 @@ export default function CustomizedAccordions() {
         <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
           <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
             <AddHomeIcon className='mr-3'/>
-            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Como preparar sua casa para um serviço de limpeza profissional Cleaning?</Typography>
+            <Typography className='font-bold text-md sm:text-xl text-gray-700'>How to Prepare Your Home for a Professional Cleaning Service</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
-            Contratar um serviço de limpeza profissional é uma excelente maneira de garantir que sua casa permaneça impecável, mesmo nas semanas mais corridas. No entanto, há alguns passos que você pode seguir antes da chegada da equipe de limpeza para maximizar a eficiência e garantir que você aproveite ao máximo a visita. Aqui está um guia sobre como preparar sua casa para um serviço de limpeza profissional.
+            Hiring a professional cleaning service is an excellent way to ensure your home remains spotless, even during the busiest weeks. However, there are a few steps you can take before the cleaning team arrives to maximize efficiency and make the most of their visit. Here is a guide on how to prepare your home for a professional cleaning service.
             
-            <span className='font-bold'>1. Desapegue das áreas comuns</span>
-            A limpeza ao redor da bagunça pode atrasar o processo de limpeza. Reserve alguns minutos para guardar itens como brinquedos, roupas, louças e outros pertences pessoais das bancadas, pisos e mesas. Isso permite que a equipe de limpeza se concentre na limpeza profunda em vez de arrumar a bagunça.
+            <span className='font-bold'>Declutter Common Areas</span>
+            Cleaning around clutter can slow down the cleaning process. Take a few minutes to put away items like toys, clothes, dishes, and other personal belongings from countertops, floors, and tables. This allows the cleaning team to focus on deep cleaning rather than tidying up the clutter.
 
-            <span className='font-bold'>2. Guarde itens valiosos e pessoais</span>
-            Embora os serviços de limpeza profissional sejam confiáveis, é uma boa prática guardar itens valiosos ou sensíveis, como jóias, dinheiro, documentos importantes ou pequenos eletrônicos. Isso lhe dá tranquilidade e garante que nada seja acidentalmente deslocado durante a limpeza.
+            <span className='font-bold'>2. Store Valuable and Personal Items</span>
+            Although professional cleaning services are trustworthy, it is a good practice to store valuable or sensitive items such as jewelry, money, important documents, or small electronics. This gives you peace of mind and ensures that nothing is accidentally misplaced during the cleaning.
             
-            <span className='font-bold'>3. Comunique instruções especiais </span>
-            Cada casa é diferente, então, se houver áreas específicas que você deseja que a equipe de limpeza foque ou evite, informe-os com antecedência. Seja um item frágil que requer manuseio cuidadoso ou um cômodo específico que precisa de atenção extra, a comunicação clara garante que suas necessidades sejam atendidas.
+            <span className='font-bold'>3. Communicate Special Instructions</span>
+            Every home is different, so if there are specific areas you want the cleaning team to focus on or avoid, inform them in advance. Whether it’s a fragile item that requires careful handling or a particular room that needs extra attention, clear communication ensures your needs are met.
 
-            <a href='/Tips' className='text-quinta'>Saiba mais clicando aqui</a>
+            <a href='/Tips' className='text-quinta'>Learn more by clicking here</a>
 
             </Typography>
           </AccordionDetails>
@@ -113,24 +112,24 @@ export default function CustomizedAccordions() {
         <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
           <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
             <CleanHandsIcon className='mr-3'/>
-            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Como manter um escritório em casa limpo e organizado em Washington?
+            <Typography className='font-bold text-md sm:text-xl text-gray-700'>How to Keep a Home Office Clean and Organized in Washington
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
-            Com o aumento do trabalho remoto, mais residentes de Washington estão montando escritórios em casa para se manterem produtivos e focados. No entanto, trabalhar de casa traz seus próprios desafios, especialmente quando se trata de manter seu espaço de trabalho limpo e organizado. Um escritório em casa arrumado não só aumenta a produtividade, mas também cria um ambiente de trabalho mais agradável. Aqui estão algumas dicas para ajudar você a manter um escritório em casa limpo e organizado.
+            With the rise of remote work, more Washington residents are setting up home offices to stay productive and focused. However, working from home brings its own challenges, especially when it comes to keeping your workspace clean and organized. A tidy home office not only boosts productivity but also creates a more pleasant working environment. Here are some tips to help you keep a home office clean and organized.
             
 
-            <span className='font-bold'>1. Desapegue regularmente</span>
-            A bagunça pode se acumular rapidamente em um escritório em casa, especialmente se você estiver lidando com várias tarefas. Reserve alguns minutos no final de cada dia para arrumar sua mesa, guardar papéis e remover quaisquer itens que não pertençam ao local. Desapegar regularmente ajuda a manter um espaço de trabalho claro e reduz as distrações.
+            <span className='font-bold'>1. Declutter Regularly</span>
+            Clutter can quickly accumulate in a home office, especially if you’re juggling multiple tasks. Take a few minutes at the end of each day to tidy up your desk, put away papers, and remove any items that don’t belong. Regular decluttering helps maintain a clear workspace and reduces distractions.
 
-            <span className='font-bold'>2. Estabeleça um sistema de arquivamento</span>
-            Papéis e documentos podem se acumular facilmente se não forem gerenciados adequadamente. Crie um sistema de arquivamento para documentos importantes, faturas e anotações. Use pastas rotuladas ou arquivos para manter tudo organizado e fácil de encontrar. Para arquivos digitais, considere usar armazenamento em nuvem e organizá-los em pastas para acesso rápido.
+            <span className='font-bold'>2. Establish a Filing System</span>
+            Papers and documents can easily pile up if not managed properly. Create a filing system for important documents, invoices, and notes. Use labeled folders or files to keep everything organized and easy to find. For digital files, consider using cloud storage and organizing them into folders for quick access.
             
-            <span className='font-bold'>3. Mantenha sua mesa limpa</span>
-            Uma mesa livre de bagunça é essencial para um dia de trabalho produtivo. Limite os itens em sua mesa ao essencial: seu computador, um caderno e alguns suprimentos usados com frequência. Use organizadores de gaveta ou bandejas de mesa para guardar canetas, clipes de papel e outros pequenos itens fora da vista.
+            <span className='font-bold'>3. Keep Your Desk Clean</span>
+            A clutter-free desk is essential for a productive workday. Limit the items on your desk to the essentials: your computer, a notebook, and a few frequently used supplies. Use drawer organizers or desk trays to store pens, paper clips, and other small items out of sight.
 
-            <a href='/Tips' className='font-bold text-quinta'>Saiba mais clicando aqui</a>
+            <a href='/Tips' className='font-bold text-quinta'>Learn more by clicking here</a>
 
             </Typography>
           </AccordionDetails>
@@ -139,20 +138,20 @@ export default function CustomizedAccordions() {
         <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
           <AccordionSummary aria-controls="panel4d-content" id="panel1d-header">
             <PhoneForwardedIcon className='mr-3'/>
-            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Contatos</Typography>
+            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Contacts</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography className='flex flex-col gap-3 text-gray-700 text-sm m:text-xl'>
-            <span className='font-bold'>1. Ligue</span>
-            Receberemos chamadas a qualquer momento pelo telefone +(206) 9999-999
+            <span className='font-bold'>1. Call</span>
+            We will receive calls at any time at the phone number +(980) 273-9078
             <span className='font-bold'>2. Email</span>
-            Nosso email para contato é teste@gmail.com
+            Our contact email is Claudiofpa@gmail.com.
             <span className='font-bold'>3. SMS</span>
-            Enviei SMS através do número +(206) 9999-999
+            I sent an SMS through the number +(980) 273-9078
             <span className='font-bold'>4. WhatsApp</span>
-            Estamos disponíveis também no WhatsApp, pelo número +(206) 9999-999
-            <span className='font-bold'>5. Redes Sociais</span>
-            Não esqueça que estamos nas redes, sendo Instagram e Facebook.
+            We are also available on WhatsApp at the number +(980) 273-9078
+            <span className='font-bold'>5. Social Media</span>
+            Don’t forget that we are on social media, including Instagram and Facebook.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -160,12 +159,11 @@ export default function CustomizedAccordions() {
         <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
           <AccordionSummary aria-controls="panel5d-content" id="panel1d-header">
             <CalendarMonthIcon className='mr-3'/>
-            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Horário de atendimento</Typography>
+            <Typography className='font-bold text-md sm:text-xl text-gray-700'>Business Hours</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
-              Nossos serviços podem ser personalizados para diário, semanal, quinzenal, mensal, um única vez, de acordo com a sua necessidade.
-              <span>Estamos atendendo de segunda a sábado, das 08:00 am até as 18:00 pm.</span>
+            Our services can be customized to daily, weekly, biweekly, monthly, or one-time, according to your needs. <span>We are available from Monday to Saturday, from 08:00 am to 06:00 pm.</span>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -173,25 +171,25 @@ export default function CustomizedAccordions() {
         <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
           <AccordionSummary aria-controls="panel6d-content" id="panel3d-header">
             <LibraryAddIcon className='mr-3'/>
-            <Typography className='font-bold text-md sm:text-xl text-gray-700'>10 Dicas de limpeza para moradores de Washington
+            <Typography className='font-bold text-md sm:text-xl text-gray-700'>10 Cleaning Tips for Washington Residents
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography className='flex flex-col gap-3 text-gray-600 text-sm m:text-xl'>
-            <span>Mantenha seu espaço brilhando o ano TODO
+            <span>Keep Your Space Shining All Year Round
             </span>
-            Viver em Seattle traz um conjunto único de desafios, especialmente quando se trata de manter sua casa limpa. O clima chuvoso da cidade pode fazer com que manter um espaço arrumado pareça uma tarefa difícil. No entanto, com algumas dicas e truques estratégicos, você pode manter sua casa brilhando o ano todo, faça chuva ou faça sol. Aqui estão nossas 10 principais dicas de limpeza:
+            Living in Seattle presents a unique set of challenges, especially when it comes to keeping your home clean. The city’s rainy weather can make maintaining a tidy space seem like a daunting task. However, with some strategic tips and tricks, you can keep your home shining all year round, rain or shine. Here are our top 10 cleaning tips:
 
-            <span className='font-bold'>1. Invista em capachos de qualidade</span>
-            A temporada de chuvas em Seattle pode resultar em pegadas enlameadas e manchas de água. Coloque capachos de alta qualidade tanto do lado de fora quanto do lado de dentro de cada entrada para capturar a sujeira e a umidade antes que se espalhem pela casa. Lembre-se de limpar os capachos regularmente para garantir que permaneçam eficazes.
+            <span className='font-bold'>1. Invest in Quality Doormats</span>
+            The rainy season in Seattle can lead to muddy footprints and water stains. Place high-quality doormats both outside and inside each entrance to capture dirt and moisture before they spread throughout the house. Remember to clean the doormats regularly to ensure they remain effective.
             
-            <span className='font-bold'>2. Mantenha a casa livre de sapatos</span>
-            Incentive uma política de não usar sapatos dentro de casa. Esta regra simples ajuda a reduzir a quantidade de sujeira, água da chuva e detritos que entram. Considere fornecer chinelos ou meias confortáveis para os convidados como um toque adicional de hospitalidade.
+            <span className='font-bold'>2. Keep Your Home Shoe-Free</span>
+            Encourage a no-shoes policy inside the house. This simple rule helps reduce the amount of dirt, rainwater, and debris that gets tracked in. Consider providing slippers or comfortable socks for guests as an extra touch of hospitality.
 
-            <span className='font-bold'>3. Combata a umidade com desumidificadores</span>
-            O clima úmido de Seattle pode levar ao excesso de umidade em sua casa, causando mofo e bolor. Combata isso usando desumidificadores, especialmente em porões, banheiros e closets. Verifique e limpe seus desumidificadores regularmente para mantê-los funcionando de maneira eficiente.
+            <span className='font-bold'>3. Combat Humidity with Dehumidifiers</span>
+            Seattle’s humid climate can lead to excess moisture in your home, causing mold and mildew. Combat this by using dehumidifiers, especially in basements, bathrooms, and closets. Check and clean your dehumidifiers regularly to keep them running efficiently.
 
-            <a href='/Tips' className='font-bold'>Saiba mais clicando aqui</a>
+            <a href='/Tips' className='font-bold'>Learn more by clicking here</a>
 
             </Typography>
           </AccordionDetails>

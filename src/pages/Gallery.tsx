@@ -3,13 +3,14 @@ import Image from 'next/image';
 
 const services = {
   rooms: [
-    { id: 1, name: 'Cozinha', images: ['/assets/Carrosel/cozinha/20200123_150607.jpg', 'imagem-dois.jpg'] },
-    { id: 2, name: 'Banheiro', images: ['imagem-tres.jpg', 'imagem-quatro.jpg'] },
-    { id: 3, name: 'Sala', images: ['imagem-cinco.jpg'] },
-    { id: 4, name: 'Quarto', images: ['imagem-seis.jpg', 'imagem-sete.jpg', 'imagem-oito.jpg'] },
-    { id: 5, name: 'Demais', images: ['imagem-nove.jpg', 'imagem-dez.jpg'] }
+    { id: 1, name: 'Kitchen', images: ['/assets/Carrosel/kitchen/20200123_150607.jpg', 'image-two.jpg'] },
+    { id: 2, name: 'Bathroom', images: ['image-three.jpg', 'image-four.jpg'] },
+    { id: 3, name: 'Living Room', images: ['image-five.jpg'] },
+    { id: 4, name: 'Bedroom', images: ['image-six.jpg', 'image-seven.jpg', 'image-eight.jpg'] },
+    { id: 5, name: 'Others', images: ['image-nine.jpg', 'image-ten.jpg'] }
   ]
 };
+
 
 export default function Gallery() {
   const [selectedRoomIndex, setSelectedRoomIndex] = useState(0);
@@ -48,14 +49,14 @@ export default function Gallery() {
               onClick={handlePrevClick}
               className="p-2 bg-white text-black rounded-l-full mr-4"
             >
-              Anterior
+              Previous
             </button>
             <h2 className="text-white text-3xl font-bold">{name}</h2>
             <button
               onClick={handleNextClick}
               className="p-2 bg-white text-black rounded-r-full ml-4"
             >
-              Próximo
+              Next
             </button>
           </div>
           

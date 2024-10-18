@@ -10,12 +10,12 @@ const Footer: React.FC = () => {
         <div className="grid md:flex md:flex-row justify-between">
           
           <div className="flex items-center pt-10 mb-5">
-            <Image width={100} height={100} src="" alt="Logo da empresa" className="h-10 filter invert" />
+            <Image width={100} height={100} src="/assets/Navbar/logo-alves-cleaning.png" alt="Logo da empresa" className="w-32" />
           </div>
 
           <div className="grid m:grid-cols-3 sm:flex justify-center items-center gap-3 mb-10">
-            <button className="text-gray-700 hover:text-gray-400 text-start">Termos de Uso</button>
-            <button className="text-gray-700 hover:text-gray-400 text-start"><a href="/Documetation">Documentação</a></button>
+            <button className="text-gray-700 hover:text-gray-400 text-start">Terms of Use</button>
+            <button className="text-gray-700 hover:text-gray-400 text-start"><a href="/Documetation">Documentation</a></button>
             <button className="text-gray-700 hover:text-gray-400 text-start"><a href="/AboutCompany">About</a></button>
           </div>
         </div>
