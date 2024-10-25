@@ -8,7 +8,7 @@ const people = [
         '/assets/About/imagem1.jpg',
     },
     {
-        name: 'Esposa',
+        name: 'Wife',
         role: 'Co-Founder',
         imageUrl:
           '/assets/About/imagem1.jpg',
@@ -23,7 +23,7 @@ const people = [
           <div className="max-w-2xl">
             <h2 className="text-5xl font-bold tracking-tight text-gray-700 sm:text-5xl">Meet our team</h2>
             <p className="mt-6 text-lg leading-8 text-gray-700">
-            The team can be changed at any time to perform the service in your home.
+            Together, we create spotless spaces and deliver excellence—one clean at a time!
             </p>
           </div>
           <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">

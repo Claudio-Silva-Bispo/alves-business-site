@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faHome, faBuilding, faPhone, faCalendarAlt, faCalendarTimes, faComments, faChevronDown, faUsers, faThumbsUp, faShareAlt, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
 // Instalar npm install primeicons
 // Desinstalar npm uninstall primeicons
 //import 'primeicons/primeicons.css';
@@ -13,7 +12,6 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const [activeHash, setActiveHash] = useState('');
   const router = useRouter();
 
   const menuItems = [
@@ -207,7 +205,7 @@ export default function Navbar() {
       {/* Menu mobile */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-gray-800 z-40 flex flex-col lg:hidden">
-          <button onClick={toggleMobileMenu} className="self-end text-gray-800 pt-5">
+          <button onClick={toggleMobileMenu} className="self-end text-gray-800 pt-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -219,10 +217,11 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <ul className="flex flex-col items-start space-y-4 px-3">
+          <ul className="flex flex-col items-start space-y-2 px-3">
             {menuItems.map((menuItem) => (
               <li key={menuItem.item} className="w-full border-b border-white last:border-none">
-                <Link href={menuItem.path} className="text-md text-white flex items-center space-x-3 py-3" onClick={() => handleHashLinkClick(menuItem.path)}>
+                <Link href={menuItem.path} className="text-md text-white flex items-center space-x-3 py-3" onClick={() => {handleHashLinkClick(menuItem.path); setIsMobileMenuOpen(false)
+                }}>
                   <FontAwesomeIcon icon={menuItem.icon} />
                   <span>{menuItem.item}</span>
                 </Link>

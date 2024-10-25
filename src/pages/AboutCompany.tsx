@@ -12,19 +12,19 @@ export default function AboutCompany() {
                         
                         <div>
                             <h1 className="text-5xl font-bold mb-3 text-gray-700 ">About company</h1>
-                            <p className="text-2xl text-gray-600 leading-10">Founded with love and dedication, our mission is to transform every house into a welcoming home.</p>
+                            <p className="text-xl text-gray-600 leading-10">Founded with love and dedication, our mission is to transform every house into a welcoming home.</p>
                         </div>
                         
                         <div className="flex flex-col justify-center text-start lg:text-left">
                             <h2 className="text-4xl font-bold text-gray-700 mb-3">Mission</h2>
                             
-                            <p className="text-2xl text-gray-600 leading-10">Transforming spaces with care and dedication, providing clean, organized, and vibrant homes where every detail reflects our diligence and attention.</p>
+                            <p className="text-xl text-gray-600 leading-10">Transforming spaces with care and dedication, providing clean, organized, and vibrant homes where every detail reflects our diligence and attention.</p>
 
                         </div>
 
                         <div className="text-start">
                             <h2 className="text-4xl font-bold text-gray-700 mb-3">Vision</h2>
-                            <p className="text-2xl text-gray-600 leading-10">To be recognized as the company that brings warmth and renewal to every home, standing out for excellence in creating spaces that inspire comfort and well-being.</p>
+                            <p className="text-xl text-gray-600 leading-10">To be recognized as the company that brings warmth and renewal to every home, standing out for excellence in creating spaces that inspire comfort and well-being.</p>
                         </div>
 
                     </div>

@@ -46,13 +46,13 @@ export default function Testimonials() {
     return (
         <section className="bg-segunda flex flex-col justify-center min-h-screen" id="Testimonials">
             <div className="container flex flex-col justify-start md:justify-center mx-auto pt-16">
-                <h1 className="text-5xl font-semibold leading-none text-start text-gray-700 p-6 sm:p-16">Avaliações recebidas</h1>
+                <h1 className="text-5xl font-semibold leading-none text-start text-gray-700 p-6 sm:p-16">Received Reviews</h1>
             </div>
 
             <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly">
                 {(loadingError || feedbacks.length === 0 ? placeholders : feedbacks).map((feedback) => (
-                    <div className="flex flex-col max-w-md mx-4 my-6 bg-white shadow-lg rounded-lg" key={feedback._id}>
-                        <div className="px-4 py-12 sm:px-8 md:px-12 h-40">
+                    <div className="flex flex-col max-w-md mx-2 my-3 bg-white shadow-lg rounded-lg" key={feedback._id}>
+                        <div className="px-4 py-12 sm:px-3 md:px-12 h-40">
                             <p className="relative px-6 py-1 m:text-xl italic text-center text-gray-800">
                                 {feedback.mensagem}
                             </p>

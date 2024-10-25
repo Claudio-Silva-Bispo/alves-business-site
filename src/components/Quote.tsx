@@ -166,7 +166,7 @@ export default function Quote() {
             
         </div>
 
-        <div className="grid md:flex md:flex-col md:justify-center mt-0 w-[100%] order-1 m:p-10">
+        <div className="grid md:flex md:flex-col md:justify-center mt-0 w-[100%] order-1 p-2 m:p-10">
                 
           <h1 className='text-4xl m:text-6xl tracking-tight text-[#FFFF] uppercase mt-10 md:mt-0'>Get your quote today</h1>
           <p className='mt-5 mb-5 text-xl md:text-2xl text-gray-600 w-[100%]'>To schedule a cleaning service or request a quote, simply fill out the form.</p>

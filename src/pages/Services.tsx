@@ -15,7 +15,7 @@ type CardProps = {
 
 const InfoCard: React.FC<CardProps> = ({ icon, color, title, description }) => {
   return (
-    <div className="bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between max-h-80 h-full">
+    <div className="bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between h-full">
       <div className={`text-${color}-500 p-5`}>
         {icon}
       </div>
