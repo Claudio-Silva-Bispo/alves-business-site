@@ -41,7 +41,7 @@ export default function Contact(){
 
                                     */}
                                     
-                                    <a href="https://www.instagram.com/" target="_blank" title="Instagram" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-quinta hover:bg-gray-50 text-gray-50 hover:text-blue-500 focus:ring hover:ring focus:ring-opacity-75 focus:ring-quinta hover:ring-quinta">
+                                    <a href="https://www.instagram.com/alvescleaningservicee" target="_blank" title="Instagram" className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-quinta hover:bg-gray-50 text-gray-50 hover:text-blue-500 focus:ring hover:ring focus:ring-opacity-75 focus:ring-quinta hover:ring-quinta">
                                         <FaInstagram className="h-4 w-4 md:h-6 md:w-6" />
                                     </a>
                                     
